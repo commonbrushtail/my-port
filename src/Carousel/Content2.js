@@ -10,7 +10,7 @@ export default class Content2 extends Component {
         return (
             <div className ={this.props.index===this.state.content-1?"content active":"content"}>
                 <div className="movieContainer">
-                    <a href="https://commonbrushtail.github.io/movie-app/" className="movieImage">
+                    <a style={{"backgroundImage":"url(movie.png)"}} href="https://commonbrushtail.github.io/movie-app/" className="movieImage">
                         
                     </a>
                     <div className="movieText">
