@@ -1,4 +1,9 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
+import img from '../'
+
+const Filter = styled.a`background-image: url(${img});`;
+
 
 export default class Content1 extends Component {
     constructor(props){
@@ -21,7 +26,7 @@ export default class Content1 extends Component {
                         
                     </div>
                     <div className="imageContainer">
-                        <a href="https://commonbrushtail.github.io/design.html" className = "filter"></a>
+                        <Filter href="https://commonbrushtail.github.io/design.html" className = "filter"></Filter>
                         <a href="https://commonbrushtail.github.io/step.html" className = "step"></a>
                     </div>
                       
