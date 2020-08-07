@@ -97,7 +97,7 @@
 
 .filter{
   object-fit: cover;
-  background-image:url("filter.png");
+  background-image:url("/filter.png");
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -114,7 +114,7 @@
 }
 .step{
   object-fit: cover;
-  background-image:url("step.png");
+  background-image:url("/step.png");
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -150,7 +150,7 @@
 .movieImage{
   height: 50%;
   width: 100%;
-  background-image: url("movie.png");
+  background-image: url("/movie.png");
   background-position-y: bottom;
   background-position-x: center;
   background-size: cover;
