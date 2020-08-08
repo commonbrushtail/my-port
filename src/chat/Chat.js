@@ -72,7 +72,7 @@ export default class Chat extends Component {
                 <div className="textBar">
                     <form onSubmit={this.handleSubmit} className="chatContainer">
                         <input placeholder="Type a message..." onChange={this.handleChange}  className="chatInput" type="text" ref={this.input}/>
-                        {this.state.input!=""?<button type="button" onClick={this.handleClick}><img src="send.png"/></button>:<button type="button" onClick={this.handleClick}><img src="dog.png"/></button>}
+                        {this.state.input!=""?<button type="button" onClick={this.handleSubmit}><img src="send.png"/></button>:<button type="button" onClick={this.handleClick}><img src="dog.png"/></button>}
                         
                         
                     </form>
