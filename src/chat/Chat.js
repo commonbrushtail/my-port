@@ -12,7 +12,8 @@ export default class Chat extends Component {
             "input":"",
             "dogClick":false,
             "newBlock":true,
-            "scroll":""
+            "scroll":"",
+            "load":true,
             
             
     }    
@@ -62,12 +63,21 @@ export default class Chat extends Component {
         
         
     }
+    componentDidMount(){
+        if(this.props.load===false){
+            setTimeout(() => {
+                this.setState({"load":false})    
+            }, 10);
+            
+
+        }
+    }
 
     
 
     render() {
         return (
-            <div className = "screen">
+            <div className = {`screen ${this.state.load===false?"active":""}`}>
                 <Conversation msgList={this.state.list} scroll ={this.state.scroll}/>
                 <div className="textBar">
                     <form onSubmit={this.handleSubmit} className="chatContainer">

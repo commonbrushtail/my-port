@@ -16,19 +16,41 @@ color:white;
 export default class App extends React.Component {
   constructor(props){
     super(props)
+    this.state = {"loading":""}
+  }
+
+  componentDidMount(){
+    this.setState({"loading":true})
+    
+
+    setTimeout(() => {
+      this.setState({"loading":false})
+    }, 2000);
+    
+
     
   }
+
   render() {
     return (
       <div>
+
+        {this.state.loading===true?
+        <div className="loaderWrap"><img className ="loader" src ="200.gif"/></div>
+        :<div>
         <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         </Helmet>
         <Header/>
-        <Hero/>
+        <Hero load = {this.state.loading}/>
         <p className = "title">My Project</p>
         <Carousel/>
         <About/>
+
+        </div>
+        }
+
+        
         
         
       </div>

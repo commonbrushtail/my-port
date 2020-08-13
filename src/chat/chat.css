@@ -9,7 +9,17 @@
     box-shadow: 0 2px 2px rgba(0,0,0,.2);
     display: flex;
     flex-direction: column;
-    
+    transform: translateY(100%);
+    transition: all 1s ease;
+    -webkit-transition: all  1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  opacity: 0;
+}
+
+.screen.active{
+    transform: translateY(0);
+    opacity: 100;
 }
 
 .conversation{

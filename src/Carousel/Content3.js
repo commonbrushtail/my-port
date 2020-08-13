@@ -13,7 +13,7 @@ export default class Content3 extends Component {
                     <img src="gif.gif"/>
                     <div className="learnText">
                     <span>More on the way..</span>
-                    <p>I spend most of my day learning about web development and any other skill that will help me break into the field. I currently focus on learning more javascript and react so that I could build a more complex website with clean and dry code.</p>
+                    <p>I currently focus on learning more javascript and react so that I could build a more complex website with clean and dry code.</p>
                     </div>
                 </div>
                 
