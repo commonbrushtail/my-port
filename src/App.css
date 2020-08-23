@@ -8,6 +8,7 @@
 
 .aboutMeImg{
   object-fit: cover;
+  object-position: top;
   border-radius: 100px;
   width: 100px ;
   height: 100px;
